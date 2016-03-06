@@ -1,16 +1,6 @@
 <?php
 /**
  *---------------------------------------------------------------
- * Application Configuration
- *---------------------------------------------------------------
- *
- * Bofore requiering the autloader we need to define where
- * image butler finds the configuration files
- */
-define('IMAGEBUTLER_CONFIG', __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'config');
-
-/**
- *---------------------------------------------------------------
  * Autoloader / Compser
  *---------------------------------------------------------------
  *
@@ -24,12 +14,23 @@ require __DIR__ .
 	DIRECTORY_SEPARATOR . 
 	'autoload.php';
 
+/**
+ *---------------------------------------------------------------
+ * Get the application
+ *---------------------------------------------------------------
+ *
+ * Simply require the imagebutler.php file to create an 
+ * application instance we can work with.
+ */
+$application = require __DIR__ . DS . '..' . DS . 'imagebutler.php';
+
 
 /**
  *---------------------------------------------------------------
- * PUBLIC PATH
+ * Dispatch
  *---------------------------------------------------------------
  *
- * Define the public path used by image butler
+ * Run the default public actions.
+ * $_SERVER['REQUEST_METHOD'], $_SERVER['REQUEST_URI']
  */
-define('IMAGEBUTLER_PUBLIC', __DIR__);
+$application->dispatchFromSuperGlobals();

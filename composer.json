@@ -2,7 +2,6 @@
 	"name": "mario-deluna/image-butler",
 	"type": "project",
 	"description": "Super simple image hosting microservice.",
-	"version": "1.0.0",
 	"homepage": "https://github.com/mario-deluna/image-butler",
 	"license": "MIT",
 	"authors": [
@@ -13,13 +12,10 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"\\": "app/",
-			"\\ImageButler\\": "src/"
-		},
-		"files": ["wake.php"]
+			"\\": "src/"
+		}
 	},
 	"require": {
-		"nikic/fast-route": "^0.6.0",
-		"twig/twig": "~1.0"
+		
 	}
 }
