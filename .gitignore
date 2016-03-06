@@ -1,6 +1,3 @@
 # Backend
 vendor/*
 cache/*
-
-# Facade
-node_modules/*

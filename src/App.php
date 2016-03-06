@@ -1,7 +1,8 @@
 <?php 
 
+namespace Service;
 
-class App extends ImageButler\App
+class App extends \ImageButler\Application
 {
 
 }

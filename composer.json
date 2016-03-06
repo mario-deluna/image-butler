@@ -12,10 +12,10 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"\\": "src/"
+			"Service\\": "src/"
 		}
 	},
 	"require": {
-		
+		"mario-deluna/image-butler-core": "dev-master"
 	}
 }

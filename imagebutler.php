@@ -1,6 +1,19 @@
 <?php 
 /**
  *---------------------------------------------------------------
+ * Autoloader / Compser
+ *---------------------------------------------------------------
+ *
+ * We need to access our dependencies..
+ */
+require __DIR__ . 
+	DIRECTORY_SEPARATOR . 
+	'vendor' . 
+	DIRECTORY_SEPARATOR . 
+	'autoload.php';
+
+/**
+ *---------------------------------------------------------------
  * Configuration
  *---------------------------------------------------------------
  * 
@@ -21,4 +34,4 @@ if (file_exists($configurationPath) && is_readable($configurationPath)) {
  * 
  * Try to load the environemnt specific configuration file
  */
-return new App($configuration);
+return new Service\App($configuration);

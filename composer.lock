@@ -1,0 +1,58 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "70ef00ea6b0999cff0749f1c692e3bf3",
+    "content-hash": "2d47e802a0a8de85fe59acfc8ab5ca1a",
+    "packages": [
+        {
+            "name": "mario-deluna/image-butler-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mario-deluna/image-butler-core.git",
+                "reference": "e6b1e42cda14f3ce86768d57395bdd3303b625da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mario-deluna/image-butler-core/zipball/e6b1e42cda14f3ce86768d57395bdd3303b625da",
+                "reference": "e6b1e42cda14f3ce86768d57395bdd3303b625da",
+                "shasum": ""
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "\\ImageButler\\": "src/"
+                },
+                "files": [
+                    "wake.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mario Döring",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Super simple image hosting microservice.",
+            "homepage": "https://github.com/mario-deluna/image-butler",
+            "time": "2016-03-06 16:39:51"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "mario-deluna/image-butler-core": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
