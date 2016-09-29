@@ -17,4 +17,14 @@ $application = require __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATO
  * Run the default public actions.
  * $_SERVER['REQUEST_METHOD'], $_SERVER['REQUEST_URI']
  */
-$application->dispatchFromSuperGlobals();
+$response = $application->dispatchFromSuperGlobals();
+
+/**
+ *---------------------------------------------------------------
+ * Send the response
+ *---------------------------------------------------------------
+ *
+ * Now we can send our response to the client, means
+ * setting the headers and outputting the body.
+ */
+$response->send(true);
